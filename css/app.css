@@ -62,8 +62,8 @@ ul li {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 4px;
 }
-.fa-trash {
-   background: red;
+.fa-trash,
+.fa-pencil {
    cursor: pointer;
    padding: 10px;
    border-radius: 40px;
@@ -74,13 +74,35 @@ ul li {
    justify-content: center;
    color: #ffc;
 }
+.fa-pencil {
+    background: rgb(0, 119, 255);
+}
+.fa-trash {
+    background: red;
+}
 .error {
     border:1px solid red !important;
 }
 h1 {
     opacity: 0.8;
 }
+.action-div {
+    display: flex;
+    width: 65px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+#edit {
+    background: #ec9c07;
+}
 
+.hide {
+    display: none;
+}
+.show {
+    display: inline-block;
+}
 @media(max-width:900px) {
     .container {
         width: 90%;
